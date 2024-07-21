@@ -68,7 +68,12 @@ function App() {
 					)}
 				</div>
 				<div className="computer">
-					{computerSelected == -1 && <h1>waiting for player...</h1>}
+					{computerSelected == -1 && (
+						<div className="lds-ripple">
+							<div></div>
+							<div></div>
+						</div>
+					)}
 					{computerSelected == 1 && <img src={rockImg} alt="" />}
 					{computerSelected == 2 && <img src={paperImg} alt="" />}
 					{computerSelected == 3 && <img src={scissorsImg} alt="" />}
