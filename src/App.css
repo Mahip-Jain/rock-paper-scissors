@@ -5,16 +5,23 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
+.player>img, .computer>img{
+  height: 10em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: all 250ms;
+  filter: drop-shadow(0px 0px 1em rgba(0, 0, 0, 0.75));
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.player>img:hover, .computer>img:hover{
+  filter: drop-shadow(30px 30px 10px rgb(0, 0, 0));
+  /* transform: scale(2); */
+  /* transform: rotateX(20deg); */
+  /* transform: rotateY(20deg);
+  transform: rotateZ(20deg); */
+  transform: rotate3d(-0.5, 2, 1, 20deg) scale(1.2);
+  transition: all 0.5s;
 }
-.logo.react:hover {
+.player>img.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -40,3 +47,4 @@
 .read-the-docs {
   color: #888;
 }
+
