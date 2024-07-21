@@ -48,3 +48,16 @@
   color: #888;
 }
 
+
+.score {
+  /* float: left; */
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  display: flex;
+  justify-content: center;
+  width: 700px;
+
+}
+.score > h2 {
+  margin-inline: 100px;
+}
